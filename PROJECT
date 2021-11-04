@@ -1,0 +1,10 @@
+domain: daocloud.io
+repo: rocketmq-operator-v2
+resources:
+- group: rocketmq
+  kind: DledgerBroker
+  version: v1
+- group: rocketmq
+  kind: Nameserver
+  version: v1
+version: "2"

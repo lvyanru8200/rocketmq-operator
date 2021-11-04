@@ -1,0 +1,7 @@
+apiVersion: rocketmq.daocloud.io/v1
+kind: DledgerBroker
+metadata:
+  name: dledgerbroker-sample
+spec:
+  # Add fields here
+  foo: bar

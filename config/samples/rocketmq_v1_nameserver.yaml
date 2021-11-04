@@ -1,0 +1,7 @@
+apiVersion: rocketmq.daocloud.io/v1
+kind: Nameserver
+metadata:
+  name: nameserver-sample
+spec:
+  # Add fields here
+  foo: bar

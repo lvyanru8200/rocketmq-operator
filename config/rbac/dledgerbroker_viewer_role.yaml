@@ -1,0 +1,20 @@
+# permissions for end users to view dledgerbrokers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dledgerbroker-viewer-role
+rules:
+- apiGroups:
+  - rocketmq.daocloud.io
+  resources:
+  - dledgerbrokers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - rocketmq.daocloud.io
+  resources:
+  - dledgerbrokers/status
+  verbs:
+  - get

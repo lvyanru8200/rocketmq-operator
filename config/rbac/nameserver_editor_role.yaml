@@ -1,0 +1,24 @@
+# permissions for end users to edit nameservers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nameserver-editor-role
+rules:
+- apiGroups:
+  - rocketmq.daocloud.io
+  resources:
+  - nameservers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - rocketmq.daocloud.io
+  resources:
+  - nameservers/status
+  verbs:
+  - get
