@@ -24,7 +24,7 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// NameserverSpec defines the desired state of Nameserver
+// NameserverSpec defines the desired state of Nameserver  NameserverSpec定义Nameserver的所需状态
 type NameserverSpec struct {
 	NameserverNumber   int                         `json:"nameserverNumber,omitempty"`
 	Resource           corev1.ResourceRequirements `json:"resource,omitempty"`
@@ -35,7 +35,7 @@ type NameserverSpec struct {
 	Export             ExportSetting               `json:"export,omitempty"`
 }
 
-// NameserverStatus defines the observed state of Nameserver
+// NameserverStatus defines the observed state of Nameserver  NameserverStatus定义观察到的Nameserver状态
 type NameserverStatus struct {
 	ConnectAddr string `json:"externalAddr,omitempty"`
 }
@@ -43,7 +43,7 @@ type NameserverStatus struct {
 // +kubebuilder:object:root=true
 // +kubebuilder:subresource:status
 
-// Nameserver is the Schema for the nameservers API
+// Nameserver is the Schema for the nameservers API  Nameserver是nameserversapi的模式
 type Nameserver struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
